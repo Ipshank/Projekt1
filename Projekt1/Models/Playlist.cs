@@ -14,5 +14,8 @@ namespace Projekt1.Models
         public string Name { get; set; }
 
         public string Creator { get; set; }
+
+
+        public virtual ICollection<File> Files { get; set; }
     }
 }

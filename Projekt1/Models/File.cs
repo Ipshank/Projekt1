@@ -19,6 +19,19 @@ namespace Projekt1.Models
 
         public DateTime Created { get; set; }
 
+        public int GenreID { get; set; }
+
+        public int TypeID { get; set; }
+
+        public int AlbumID { get; set; }
+
+
+        public virtual Genre Genre { get; set; }
+        public virtual Type Type { get; set; }
+        public virtual Album Album { get; set; }
+
+
+        public virtual ICollection<Playlist> Playlists { get; set; }
         
     }
 

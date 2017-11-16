@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
+using System.Data.Entity;
 
 namespace Projekt1.Models
 {
@@ -13,5 +14,10 @@ namespace Projekt1.Models
         public int Id { get; set; }
 
         public string Name { get; set; }
+    }
+
+    public class UserDBCtxt: DbContext
+    {
+        public DbSet<User> Users { get; set; }
     }
 }

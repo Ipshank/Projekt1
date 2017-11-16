@@ -7,8 +7,8 @@ namespace Projekt1.Models
 {
     public class PlaylistFile
     {
-        public int FileId { get; set; }
+        public int FileID { get; set; }
 
-        public int PlaylistId { get; set; }
+        public int PlaylistID { get; set; }
     }
 }
