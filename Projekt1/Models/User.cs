@@ -14,7 +14,8 @@ namespace Projekt1.Models
         public int Id { get; set; }
 
         public string Name { get; set; }
-    } public virtual ICollection<Playlist> Playlists { get; set; }
+        public virtual ICollection<Playlist> Playlists { get; set; }
+    } 
 
     public class UserDBCtxt: DbContext
     {
