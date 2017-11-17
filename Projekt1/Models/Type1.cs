@@ -7,18 +7,23 @@ using System.Data.Entity;
 
 namespace Projekt1.Models
 {
-    public class User
+    public class Type1
     {
-
         [Key]
         public int Id { get; set; }
 
         public string Name { get; set; }
-        public virtual ICollection<Playlist> Playlists { get; set; }
-    } 
 
-    public class UserDBCtxt: DbContext
+
+
+        public virtual ICollection<File> Files { get; set; }
+
+    }
+
+    public class Type1DBctxt : DbContext
     {
-        public DbSet<User> Users { get; set; }
+        public DbSet<Type1>  Type1s { get; set; }
+
+        public DbSet<File> Files { get; set; }
     }
 }
